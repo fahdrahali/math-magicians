@@ -3,7 +3,6 @@
 > Math Magicians is a website for all fans of mathematics.
 
 ## Getting Started
-To get a local copy up and running follow these simple example steps.
 
 - clone the project: `[git clone https://github.com/fahdrahali/leaderboard.git](https://github.com/fahdrahali/math-magicians.git)`
 - install dependencices : `npm install`
@@ -20,7 +19,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live (If Available)
 
-- Link here: [Live](https://fahdrahali.github.io/leaderboard/)
+- Link here: [Live]()
 
 
 ## 🤝 Contributing
