@@ -2,24 +2,26 @@
 
 > Math Magicians is a website for all fans of mathematics.
 
+## Built With
+
+- React
+
+## Live Demo (if available)
+
+[Live Demo Link]()
+
+
 ## Getting Started
 
 - clone the project: `[git clone https://github.com/fahdrahali/leaderboard.git](https://github.com/fahdrahali/math-magicians.git)`
 - install dependencices : `npm install`
 - launch on the browser : `npm start`
-## Built With
-
-- React
 
 ## Authors
 
 👤 **Fahd Rahali**
 
 - GitHub: [@fahdrahali](https://github.com/fahdrahali)
-
-## Live (If Available)
-
-- Link here: [Live]()
 
 
 ## 🤝 Contributing
