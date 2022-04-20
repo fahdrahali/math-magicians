@@ -11,13 +11,14 @@ class Calculator extends Component {
 
   render() {
     const { result } = this.state;
-    const calculator = ['AC', '+/-', '%', '+', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
+    const calculator = ['AC', '+/-', '%', '÷', '7', '8', '9', '*', '4', '5', '6', '-', '1', '2', '3', '+'];
     return (
-      <div>
-        <div className="container">
-          <input type="number" value={result} />
-        </div>
-        {calculator.map((item) => <div key={item}>{item}</div>)}
+      <div className="container">
+        <input className="input" type="text" dir="rtl" value={result} />
+        {calculator.map((item) => <div className="item" key={item}>{item}</div>)}
+        <div className="item num-0">0</div>
+        <div className="item">.</div>
+        <div className="item">=</div>
       </div>
     );
   }
