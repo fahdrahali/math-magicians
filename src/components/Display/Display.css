@@ -1,0 +1,11 @@
+.input {
+    grid-column: 1 / 5;
+    outline: none;
+    background-color: #b4b1b1;
+    border: none;
+    height: 60px;
+    font-size: 30px;
+    color: #ffff;
+    padding: 10px;
+    text-align: right;
+  }
