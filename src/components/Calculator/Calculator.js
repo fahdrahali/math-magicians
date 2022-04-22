@@ -1,31 +1,22 @@
-/* eslint-disable react/no-unused-state */
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './Calculator.css';
 import Display from '../Display/Display';
 import calculate from '../../logic/calculate';
 import operate from '../../logic/operate';
 import Keyboard from '../Keyboard/Keyboard';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: '0',
-      next: null,
-      operation: null,
-    };
-  }
+const Calculator = () => {
+  const [state, setState] = useState({ total: '0', next: null, operation: null });
 
-  getValue = (e) => {
+  const getValue = (e) => {
     const { value } = e.target;
-    const obj = this.state;
-    if (value === 'AC') this.setState({ total: '0', next: null, operation: null });
-    else this.setState(() => calculate(obj, value));
+    const obj = state;
+    if (value === 'AC') setState({ total: '0', next: null, operation: null });
+    else setState(() => calculate(obj, value));
   };
 
-  getResult = () => {
-    const obj = this.state;
-    const newObj = { ...obj };
+  const getResult = () => {
+    const newObj = { ...state };
     const numOne = newObj.total;
     const numTwo = newObj.next;
     const operator = newObj.operation;
@@ -33,18 +24,15 @@ class Calculator extends Component {
     newObj.total = result;
     newObj.next = null;
     newObj.operation = null;
-    this.setState(newObj);
+    setState(newObj);
   };
 
-  render() {
-    const obj = this.state;
-    return (
-      <div className="container">
-        <Display input={obj} />
-        <Keyboard getValue={this.getValue} getResult={this.getResult} />
-      </div>
-    );
-  }
-}
+  return (
+    <div className="container">
+      <Display input={state} />
+      <Keyboard getValue={getValue} getResult={getResult} />
+    </div>
+  );
+};
 
 export default Calculator;
