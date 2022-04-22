@@ -20,6 +20,7 @@
  *  https://github.com/MikeMcl/big.js/LICENCE
  */
 
+// eslint-disable-next-line func-names
 (function (GLOBAL) {
   let Big;
 
