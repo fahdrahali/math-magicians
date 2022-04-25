@@ -13,7 +13,7 @@
 
 ## Getting Started
 
-- clone the project: `[git clone https://github.com/fahdrahali/leaderboard.git](https://github.com/fahdrahali/math-magicians.git)`
+- clone the project: `git clone https://github.com/fahdrahali/math-magicians.git`
 - install dependencices : `npm install`
 - launch on the browser : `npm start`
 
