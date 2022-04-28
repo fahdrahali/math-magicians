@@ -24,7 +24,7 @@ body {
   margin-left: 100px;
 }
 
-.calculator{
+.calculator {
   display: grid;
   grid-template-columns: auto auto auto auto;
   width: 40%;
@@ -73,7 +73,6 @@ body {
 
 .item:nth-child(4n-3):hover {
   background-color: #ca8a13;
-
 }
 
 .orange {
@@ -105,12 +104,12 @@ body {
 }
 
 .nav-link li {
- margin-left: 20px;
- font-size: 25px;
- color: #cf640c;
+  margin-left: 20px;
+  font-size: 25px;
+  color: #cf640c;
 }
 
-Link {
+link {
   list-style: none;
 }
 
