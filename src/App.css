@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #fbf0e6;
+  background-color: #fbf7f2;
 }
 
 .container {
@@ -31,6 +31,8 @@ body {
   width: 100%;
   background-color: #f5f3f3;
   margin-right: 150px;
+  border-radius: calc(0.5 * 100px);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
 }
 
 .input {
@@ -56,6 +58,11 @@ body {
   padding: 10px;
 }
 
+.item:hover {
+  font-size: 25px;
+  background-color: #e7d9cd;
+}
+
 .num-0 {
   grid-column: 1 / 3;
 }
@@ -64,8 +71,17 @@ body {
   background-color: #eca013;
 }
 
+.item:nth-child(4n-3):hover {
+  background-color: #ca8a13;
+
+}
+
 .orange {
   background-color: #eca013;
+}
+
+.orange:hover {
+  background-color: #ca8a13;
 }
 
 .nav {
