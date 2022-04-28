@@ -1,6 +1,5 @@
 import { checkPropTypes } from 'prop-types';
 import React, { Component } from 'react';
-import './Keyboard.css';
 
 class Keyboard extends Component {
   getValue = (e) => {
