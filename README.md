@@ -24,6 +24,10 @@
 - GitHub: [@fahdrahali](https://github.com/fahdrahali)
 
 
+👤 **Didier Sangwa**
+
+- GitHub: [@sangwa7](https://github.com/sangwa7/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
