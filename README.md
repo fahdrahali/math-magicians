@@ -24,7 +24,7 @@
 - GitHub: [@fahdrahali](https://github.com/fahdrahali)
 
 
-👤 **Didier Sangwa**
+👤 **Didier SANGWA**
 
 - GitHub: [@sangwa7](https://github.com/sangwa7/)
 
