@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import './Calculator.css';
-import Display from '../Display/Display';
-import calculate from '../../logic/calculate';
-import operate from '../../logic/operate';
-import Keyboard from '../Keyboard/Keyboard';
+import calculate from '../logic/calculate';
+import operate from '../logic/operate';
+import Display from './Display';
+import Keyboard from './Keyboard';
 
 const Calculator = () => {
   const [state, setState] = useState({ total: '0', next: null, operation: null });
@@ -29,8 +28,11 @@ const Calculator = () => {
 
   return (
     <div className="container">
-      <Display input={state} />
-      <Keyboard getValue={getValue} getResult={getResult} />
+      <h1>Let&#39;s do some math!</h1>
+      <div className="calculator">
+        <Display input={state} />
+        <Keyboard getValue={getValue} getResult={getResult} />
+      </div>
     </div>
   );
 };

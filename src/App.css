@@ -1,5 +1,141 @@
+@import url('http://fonts.cdnfonts.com/css/lato');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-color: #fbf7f2;
+}
+
+.container {
+  display: flex;
+  margin: 300px auto;
+  justify-content: center;
+}
+
+.container h1 {
+  justify-content: flex-start;
+  width: 80%;
+  margin-left: 100px;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 40%;
+  width: 100%;
+  background-color: #f5f3f3;
+  margin-right: 150px;
+  border-radius: calc(0.5 * 100px);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
+}
+
+.input {
+  grid-column: 1 / 5;
+  outline: none;
+  background-color: #b4b1b1;
+  border: none;
+  height: 60px;
+  font-size: 30px;
+  color: #ffff;
+  padding: 10px;
+  text-align: right;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #f5f4f1;
+  border: 1px solid #dfdddd;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.item:hover {
+  font-size: 25px;
+  background-color: #e7d9cd;
+}
+
+.num-0 {
+  grid-column: 1 / 3;
+}
+
+.item:nth-child(4n-3) {
+  background-color: #eca013;
+}
+
+.item:nth-child(4n-3):hover {
+  background-color: #ca8a13;
+}
+
+.orange {
+  background-color: #eca013;
+}
+
+.orange:hover {
+  background-color: #ca8a13;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 40px;
+}
+
+.nav h1 {
+  width: 100%;
+  font-size: 60px;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.nav-link li {
+  margin-left: 20px;
+  font-size: 25px;
+  color: #cf640c;
+}
+
+link {
+  list-style: none;
+}
+
+.content {
+  margin: 100px;
+}
+
+.content h2 {
+  font-size: 35px;
+  margin-bottom: 100px;
+}
+
+.content div {
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 60px;
+}
+
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 50px;
+}
+
+.quote span {
+  font-style: italic;
+  color: #162b62;
 }
